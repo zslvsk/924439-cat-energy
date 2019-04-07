@@ -1,0 +1,39 @@
+@font-face {
+  font-family: "Oswald";
+  src: url("../fonts/oswaldregular.woff2") format("woff2"),
+       url("../fonts/oswaldregular.woff") format("woff");
+       font-weight: 400;
+       font-style: regular;
+}
+
+@font-face {
+  font-family: "Oswald";
+  src: url("../fonts/oswaldmedium.woff2") format("woff2"),
+       url("../fonts/oswaldmedium.woff") format("woff");
+       font-weight: 500;
+       font-style: normal;
+}
+
+@import "mixins.less";
+@import "page-header.less";
+@import "main-nav.less";
+@import "site-list.less";
+@import "promo";
+@import "button";
+@import "dietary-plan";
+@import "features";
+@import "page-footer";
+@import "social";
+@import "copyright";
+@import "catalogue";
+
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #111111;
+}
