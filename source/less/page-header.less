@@ -1,0 +1,39 @@
+.page-header {
+  display: flex;
+  flex-direction: column;
+}
+
+.page-header__logo {
+  height: 45px;
+}
+
+.page-header__nav {
+  .list-style;
+}
+
+@media (min-width: 768px) {
+  .page-header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .page-header__logo {
+    height: 70px;
+    max-width: 190px;
+  }
+
+  .page-header__nav {
+    width: 445px;
+  }
+}
+
+@media (min-width: 1300px) {
+  .page-header__logo {
+    height: 85px;
+    max-width: 220px;
+  }
+
+  .page-header__nav {
+    width: 495px;
+  }
+}

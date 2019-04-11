@@ -10,6 +10,9 @@
 
 .features__list {
   .list-style;
+  display: flex;
+  flex-direction: column;
+  margin-left: 80px;
 }
 
 .features__item {
@@ -20,4 +23,28 @@
   color: #444444;
   font-size: 14px;
   line-height: 18px;
+}
+
+@media (min-width: 768px) {
+  .features__list {
+    margin-left: 0;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .features__item {
+    flex-basis: 35%;
+    margin-bottom: 140px;
+  }
+}
+
+@media (min-width: 1300px) {
+  .features {
+    margin-bottom: 80px;
+  }
+
+  .features__item {
+    flex-basis: 20%;
+  }
 }

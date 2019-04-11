@@ -1,6 +1,12 @@
 .promo {
-  background: #63a73a url("../img/index-background-mobile@1x.jpg") no-repeat top;
   margin-bottom: 20px;
+  background-color: #63a73a;
+}
+
+.promo__wrapper {
+  padding-top: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .promo__title {
@@ -19,4 +25,36 @@
   line-height: 14px;
   text-transform: uppercase;
   text-align: center;
+}
+
+.promo__petfood-pic {
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .promo {
+    margin-bottom: 25px;
+    background-color: #ffffff;
+  }
+
+  .promo__wrapper {
+    padding-top: 50px;
+    padding-left: 90px;
+    padding-right: 50px;
+  }
+
+  .promo__programm-choice {
+    width: auto;
+  }
+}
+
+@media (min-width: 1300px) {
+  .promo {
+    margin-bottom: 80px;
+  }
+
+  .promo__wrapper {
+    padding-top: 25px;
+    padding-left: 80px;
+  }
 }
