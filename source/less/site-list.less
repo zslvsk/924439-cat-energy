@@ -1,3 +1,8 @@
+.site-list {
+  display: flex;
+  flex-direction: column;
+}
+
 .site-list__item {
   .list-style;
   margin-bottom: 25px;
@@ -10,4 +15,20 @@
 .site-list__link {
   .link-style;
   color: #111111;
+}
+
+@media (min-width: 768px) {
+  .site-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+
+  .site-list__item {
+    margin-right: 35px;
+  }
+
+  .site-list__item:last-child {
+    margin-right: 0;
+  }
 }
