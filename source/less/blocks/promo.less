@@ -1,0 +1,147 @@
+.promo {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.promo__wrapper {
+  padding-top: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.promo::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  height: 306px;
+  width: 100%;
+  background-color: #65a93c;
+  background-image: url("../img/index-background-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: -1;
+}
+
+.promo__title {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+  color: #ffffff;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+}
+
+.promo__tag-line {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 25px;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.promo__petfood {
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .promo {
+    margin-bottom: 25px;
+    background-color: #ffffff;
+  }
+
+  .promo__title {
+    margin-bottom: 45px;
+    color: #111111;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .promo__tag-line {
+    margin-bottom: 45px;
+    color: #111111;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: left;
+  }
+
+  .promo__wrapper {
+    padding-top: 50px;
+    padding-left: 90px;
+    padding-right: 50px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .promo__petfood {
+    text-align: left;
+    order: 4;
+  }
+
+  .promo__petfood-pic {
+    width: 100%;
+    height: 580px;
+    margin-top: -80px;
+  }
+
+  .promo__programm-choice {
+    padding: 15px 22px;
+    width: auto;
+    order: 3;
+    align-self: flex-start;
+    font-size: 20px;
+    line-height: 20px;
+    z-index: 2;
+  }
+}
+
+@media (min-width: 1300px) {
+  .promo {
+    margin-bottom: 80px;
+  }
+
+  .promo::before {
+    position: absolute;
+    content: "";
+    top: -111px;
+    left: calc(50% + 5px);
+    height: 585px;
+    width: 50%;
+    background-color: #65a93c;
+    background-image: url("../img/index-background-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: right;
+    z-index: 2;
+  }
+
+  .promo__wrapper {
+    padding-top: 25px;
+    padding-left: 80px;
+  }
+
+  .promo__title {
+    max-width: 420px;
+  }
+
+  .promo__tag-line {
+    margin-bottom: 55px;
+  }
+
+  .promo__petfood-pic {
+    width: 400px;
+    height: 445px;
+    margin-top: -346px;
+    margin-right: 258px;
+  }
+
+  .promo__petfood {
+    text-align: right;
+    z-index: 4;
+  }
+}
