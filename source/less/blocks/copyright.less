@@ -1,10 +1,7 @@
-.copyright {
+.copyright__link {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.copyright__link {
   font-family: "Arial", sans-serif;
   color: #444444;
   font-size: 16px;
@@ -14,23 +11,23 @@
   &:active {
     opacity: 0.3;
   }
-}
 
-.copyright__logo-icon {
-  fill: #666666;
-
-  &:hover,
-  &:focus {
+  &:hover .copyright__logo-icon,
+  &:focus .copyright__logo-icon {
     fill: #68b738;
   }
 
-  &:active {
+  &:active .copyright__logo-icon {
     opacity: 0.3;
   }
 }
 
+.copyright__logo-icon {
+  fill: #666666;
+}
+
 @media (min-width: 768px) {
-  .copyright__link {
+  .copyright__link-text {
     margin-right: 20px;
   }
 }
