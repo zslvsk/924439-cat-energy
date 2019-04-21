@@ -23,6 +23,11 @@
   background-repeat: no-repeat;
   background-position: center;
   z-index: -1;
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url("../img/index-background-mobile@2x.jpg");
+    background-size: 320px auto;
+  }
 }
 
 .promo__title {
@@ -109,8 +114,8 @@
   .promo::before {
     position: absolute;
     content: "";
-    top: -111px;
-    left: calc(50% + 5px);
+    top: -136px;
+    left: 50%;
     height: 585px;
     width: 50%;
     background-color: #65a93c;
@@ -118,6 +123,11 @@
     background-repeat: no-repeat;
     background-position: right;
     z-index: 2;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/index-background-desktop@2x.jpg");
+      background-size: 1440px auto;
+    }
   }
 
   .promo__wrapper {
@@ -137,7 +147,7 @@
     width: 400px;
     height: 445px;
     margin-top: -346px;
-    margin-right: 258px;
+    margin-right: 277px;
   }
 
   .promo__petfood {
