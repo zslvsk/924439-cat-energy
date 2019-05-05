@@ -1,0 +1,244 @@
+.extra__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.extra__item {
+  padding-bottom: 15px;
+  border-bottom: 1px solid #cdcdcd;
+}
+
+.extra__title {
+  position: relative;
+  margin: 0;
+  padding: 30px 0;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+  border-bottom: 1px solid #cdcdcd;
+}
+
+.extra__title::after {
+  position: absolute;
+  content: "";
+  top: 44px;
+  left: 247px;
+  width: 53px;
+  height: 3px;
+  background-color: #68b738;
+}
+
+.extra__item-title {
+  margin: 0;
+  padding: 15px 0;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.extra__table {
+  margin-bottom: 15px;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.extra__table-cell {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  color: #444444;
+}
+
+.extra__table-cell:last-child {
+  text-align: right;
+}
+
+.extra__gift {
+  background-image: url("../img/gift-photo-mobile@1x.jpg");
+  background-color: #68b738;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  min-height: 190px;
+  padding: 65px 60px 40px;
+  margin: 40px 0;
+  justify-content: space-between;
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url("../img/gift-photo-mobile@2x.jpg");
+    background-size: 320px auto;
+  }
+}
+
+.extra__gift-text {
+  color: #ffffff;
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  max-width: 160px;
+}
+
+@media (min-width: 768px) {
+  .extra__title {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 75px;
+    padding: 0;
+    border-bottom: none;
+  }
+
+  .extra__title::after {
+    left: 402px;
+    top: 50%;
+    width: 47.5%;
+  }
+
+  .extra__title::before {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: -30px;
+    width: 2.6%;
+    height: 3px;
+    background-color: #68b738;
+  }
+
+  .extra__item {
+    border: 1px solid #cdcdcd;
+    padding: 30px 40px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .extra__item-title {
+    padding: 25px 0;
+    font-size: 20px;
+    line-height: 20px;
+    flex-basis: 50%;
+  }
+
+  .extra__table {
+    flex-basis: 50%;
+    margin-top: 20px;
+  }
+
+  .extra__table-cell {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .extra__table-cell:first-child {
+    text-align: right;
+    width: 70%;
+  }
+
+  .extra__column {
+    margin-bottom: 69px;
+  }
+
+  .extra__gift {
+    background-image: url("../img/gift-photo-tablet@1x.jpg");
+    background-size: cover;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    min-height: 77px;
+    padding: 60px 90px 60px 70px;
+    margin: 40px 0;
+    justify-content: space-between;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/gift-photo-tablet@2x.jpg");
+      background-size: 1416px auto;
+    }
+  }
+
+  .extra__gift-text {
+    text-align: left;
+  }
+}
+
+@media (min-width: 1300px) {
+  .extra__title::before {
+    left: -40px;
+  }
+
+  .extra__title::after {
+    width: 70.2%;
+  }
+
+  .extra__columns {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 90px;
+  }
+
+  .extra__column {
+    margin-bottom: 0;
+  }
+
+  .extra__column:first-child {
+    flex-basis: 65.2%;
+  }
+
+  .extra__column:last-child {
+    flex-basis: 29%;
+  }
+
+  .extra__item {
+    padding: 25px 0;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    border-right: none;
+    border-left: none;
+    border-top: none;
+  }
+
+  .extra__item:first-child {
+    border-top: 1px solid #cdcdcd;
+  }
+
+  .extra__item-title {
+    flex-basis: 18.3%;
+  }
+
+  .extra__table {
+    flex-basis: 32.5%;
+  }
+
+  .extra__button {
+    flex-basis: 27.4%;
+  }
+
+  .extra__table-cell:first-child {
+    text-align: left;
+  }
+
+  .extra__gift {
+    background-image: url("../img/gift-photo-desktop@1x.jpg");
+    padding: 40px 22px;
+    min-height: 400px;
+    margin: 0;
+    flex-direction: column;
+    justify-content: center;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/gift-photo-desktop@2x.jpg");
+      background-size: 490px auto;
+    }
+  }
+
+  .extra__gift-icon {
+    margin-bottom: 60px;
+  }
+
+  .extra__gift-text {
+    text-align: center;
+  }
+}

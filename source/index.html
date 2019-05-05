@@ -5,7 +5,7 @@
     <title>HTML Academy: Кэт энерджи</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="format-detection" content="telephone=no">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header container">
@@ -72,9 +72,73 @@
             </ul>
           </div>
       </section>
-      <!--Здесь будет история кота Бориса + карта-->
+      <section class="example">
+        <h2 class="example__title container">Живой пример</h2>
+        <div class="example__wrapper-bg">
+        <div class="example__wrapper container">
+          <div class="example__wrapper-column1">
+            <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+            <div class="example__wrapper-middle">
+              <ul class="example__list">
+                <li class="example__item">
+                  <div class="example__item-wrapper">
+                    <span class="example__result">5 кг</span>
+                    <span class="example__result-text">снижение веса</span>
+                  </div>
+                </li>
+                <li class="example__item">
+                  <div class="example__item-wrapper">
+                    <span class="example__result">60 дней</span>
+                    <span class="example__result-text">затрачено времени</span>
+                  </div>
+                </li>
+              </ul>
+              <p class="example__price">Затраты на питание: 15 000руб.</p>
+            </div>
+          </div>
+          <div class="example__wrapper-column2 slider">
+            <input type="radio" id="then" name="toggle" class="example__input">
+            <input type="radio" id="now" name="toggle" class="example__input">
+              <div class="slider__photos">
+                <div class="">
+                  <picture>
+                    <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
+                    <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
+                    <img src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" alt="Фотография кота до похудения" class="slider__photo slider__photo--then">
+                  </picture>
+                </div>
+                <div class="">
+                  <picture>
+                    <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
+                    <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
+                    <img src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png" alt="Фотография кота после похудения" class="slider__photo slider__photo--now">
+                  </picture>
+                </div>
+              </div>
+              <div class="slider__controls">
+                <label for="then" class="slider__button slider__button--then">Было</label>
+                <div class="slider__scale">
+                  <div class="slider__control"></div>
+                </div>
+                <label for="now" class="slider__button slider__button--now">Стало</label>
+              </div>
+          </div>
+        </div>
+      </div>
+      </section>
     </main>
     <footer class="page-footer">
+      <div class="page-footer__map map">
+        <div class="map__inner">
+          <div class="map__card container">
+          <p class="map__text">Приглашаем к сотрудничеству дилеров!</p>
+          <p class="map__address">ул. Большая Конюшенная, д. 19/8 <span class="map__city">Санкт-Петербург</span></p>
+          </div>
+        </div>
+        <div class="map__block">
+          <iframe class="map__google" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya+Konyushennaya+Street%2C+19%2F8%2C+Sankt-Peterburg%2C+191186!5e0!3m2!1sen!2sru!4v1556714118168!5m2!1sen!2sru" width="320" height="390" style="border:0"></iframe>
+        </div>
+      </div>
       <div class="page-footer__wrapper container">
         <a class="page-footer__logo">
           <img class="page-footer__logo-image" src="img/logo-footer.svg" width="130" height="25" alt="Логотип магазина Cat Energy">
