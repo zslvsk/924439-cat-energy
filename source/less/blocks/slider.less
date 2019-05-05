@@ -1,0 +1,134 @@
+.slider__photos {
+  margin-bottom: 35px;
+}
+
+.slider__photo--now {
+  display: none;
+}
+
+.slider__controls {
+  display: flex;
+  justify-content: space-between;
+  max-width: 200px;
+  align-items: 200px;
+  margin: 0 auto;
+}
+
+.slider__button {
+  padding: 0;
+  margin: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: inherit;
+}
+
+.slider__button:hover,
+.slider__button:focus {
+  border-bottom: 1px solid #cdcdcd;
+}
+
+.slider__button--down {
+  border-bottom: none;
+}
+
+.slider__scale {
+  position: relative;
+  width: 83px;
+  height: 12px;
+  background-color: #ffffff;
+  border: 1px solid #cdcdcd;
+  border-radius: 50px;
+}
+
+.slider__control {
+  position: absolute;
+  content: "";
+  top: 3px;
+  left: 5px;
+  width: 35px;
+  height: 6px;
+  background-color: #68b738;
+  border-radius: 25px;
+}
+
+@media (min-width: 768px) {
+  .slider__photos {
+    margin-bottom: 40px;
+    display: flex;
+    min-height: 535px;
+  }
+
+  .slider__photo {
+    position: absolute;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .slider__photo--then {
+    clip: rect(auto, 345px, auto, auto);
+  }
+
+  .slider__photo--now {
+    display: block;
+    clip: rect(auto, auto, auto, 345px);
+  }
+
+  .slider__button {
+    font-size: 20px;
+    padding-bottom: 7px;
+    border-bottom: 1px dashed #cdcdcd;
+  }
+
+  .slider__controls {
+    margin: 0 35px;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+  }
+
+  .slider__scale {
+    position: relative;
+    margin: 0 25px;
+    width: 430px;
+    height: 6px;
+    background-color: #dcdcdc;
+    border: none;
+    border-radius: 50px;
+  }
+
+  .slider__control {
+    position: absolute;
+    top: -14px;
+    left: 50%;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 1px solid #dcdcdc;
+    background: #ffffff;
+    cursor: pointer;
+    box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.15);
+  }
+
+  .slider__control::before {
+    position: absolute;
+    content: "";
+    top: 12px;
+    left: 12px;
+    right: 0;
+    bottom: 0;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #68b738;
+  }
+}
+
+@media (min-width: 1300px) {
+  .slider__photos {
+    margin-top: -249px;
+  }
+}
