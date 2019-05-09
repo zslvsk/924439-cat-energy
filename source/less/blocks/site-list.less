@@ -5,10 +5,16 @@
 
 .site-list__item {
   .list-style;
+  margin: 0 -20px;
   font-size: 20px;
   line-height: 20px;
   text-align: center;
   font-weight: 500;
+  border-top: 1px solid #e6e6e6;
+}
+
+.site-list__item--border {
+  border-bottom: 1px solid #e6e6e6;
 }
 
 .site-list__link {
@@ -17,7 +23,6 @@
   color: #111111;
   padding-top: 25px;
   padding-bottom: 25px;
-  border-top: 1px solid #e6e6e6;
 }
 
 .site-list__link[href] {
@@ -45,11 +50,13 @@
   }
 
   .site-list__item {
+    margin: 0;
     margin-right: 30px;
     font-size: 18px;
     line-height: 25px;
     text-align: center;
     font-weight: 400;
+    border-top: none;
 
     &:last-child {
       border-bottom: none;
@@ -57,10 +64,13 @@
     }
   }
 
+  .site-list__item--border {
+    border-bottom: none;
+  }
+
   .site-list__link {
     padding-top: 0;
     padding-bottom: 9px;
-    border-top: none;
   }
 
   .site-list__link--current {

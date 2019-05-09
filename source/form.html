@@ -22,7 +22,7 @@
           <ul class="main-nav__list site-list">
             <li class="site-list__item"><a href="index.html" class="site-list__link site-list__link--inner">Главная</a></li>
             <li class="site-list__item"><a href="catalog.html" class="site-list__link site-list__link--inner">Каталог продукции</a></li>
-            <li class="site-list__item site-list__item--current"><a class="site-list__link site-list__link--inner-current site-list__link--inner">Подбор программы</a></li>
+            <li class="site-list__item site-list__item--current site-list__item--border"><a class="site-list__link site-list__link--inner-current site-list__link--inner">Подбор программы</a></li>
           </ul>
         </div>
       </nav>
@@ -64,15 +64,17 @@
           </fieldset>
         </div>
         <fieldset class="form__item">
-          <legend class="form__title">Контактные данные (владельца кота)</legend>
+          <legend class="form__title form__title--long">Контактные данные (владельца кота)</legend>
             <div class="form__section">
-            <p class="form__field form__section-column">
+            <p class="form__field form__section-column form__field--wrapper">
               <label for="email" class="form__input-label">E-mail:*</label>
               <input type="email" name="email" id="email" placeholder="Kuklachev@gmail.com" class="form__input" required>
+              <svg width="17" height="13" class="form__icon"><use xlink:href="img/sprite.svg#sprite-icon-mail"></use></svg>
             </p>
-            <p class="form__field form__section-column">
+            <p class="form__field form__section-column form__field--wrapper">
               <label for="telephone" class="form__input-label">Телефон:*</label>
               <input type="tel" name="telephone" id="telephone" placeholder="8 (960) 900-60-90" class="form__input" pattern="[0-9]{11}" required>
+              <svg width="20" height="20" class="form__icon"><use xlink:href="img/sprite.svg#sprite-icon-phone"></use></svg>
             </p>
           </div>
         </fieldset>
@@ -80,25 +82,25 @@
           <h2 class="form__title">Комментарий</h2>
           <p class="form__field">
             <label for="cat-story" class="visually-hidden">Расскажите обо всех повадках кота</label>
-            <textarea name="cat-story" id="cat-story" placeholder="Расскажите обо всех повадках кота" rows="5" cols="" class="form__input"></textarea>
+            <textarea name="cat-story" id="cat-story" placeholder="Расскажите обо всех повадках кота" rows="5" cols="34" class="form__input"></textarea>
           </p>
         </div>
         <fieldset class="form__item">
           <legend class="form__title">Дополнительно</legend>
           <ul class="form__list form__list--checkbox">
-            <li class="form__list-item">
+            <li class="form__list-item form__list-item--checkbox">
               <input type="checkbox" name="add" value="sweetener" id="sweetener-field" class="form__input form__input-checkbox" checked>
               <label for="sweetener-field" class="form__checkbox-label">Сахарозаменитель</label>
             </li>
-            <li class="form__list-item">
+            <li class="form__list-item form__list-item--checkbox">
               <input type="checkbox" name="add" value="water" id="water-field" class="form__input form__input-checkbox">
               <label for="water-field" class="form__checkbox-label">Питьевая вода</label>
             </li>
-            <li class="form__list-item">
+            <li class="form__list-item form__list-item--checkbox">
               <input type="checkbox" name="add" value="milk" id="milk-field" class="form__input form__input-checkbox">
               <label for="milk-field" class="form__checkbox-label">Молоко</label>
             </li>
-            <li class="form__list-item">
+            <li class="form__list-item form__list-item--checkbox">
               <input type="checkbox" name="add" value="vitamins" id="vitamins-field" class="form__input form__input-checkbox">
               <label for="vitamins-field" class="form__checkbox-label">Витамины</label>
             </li>
@@ -112,7 +114,7 @@
     </main>
     <footer class="page-footer">
       <div class="page-footer__map map">
-        <div class="map__inner">
+        <div class="map__inner map__inner--grey">
           <div class="map__card container">
           <p class="map__text">Приглашаем к сотрудничеству дилеров!</p>
           <p class="map__address">ул. Большая Конюшенная, д. 19/8 <span class="map__city">Санкт-Петербург</span></p>

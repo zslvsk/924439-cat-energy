@@ -13,6 +13,8 @@
 }
 
 .example__text {
+  margin: 0 14px 25px 0;
+  padding: 0;
   margin-bottom: 30px;
   font-family: "Arial", sans-serif;
   font-size: 14px;
@@ -81,16 +83,12 @@
 }
 
 @media (min-width: 768px) {
-  .container {
-    width: 708px;
-    padding: 0 30px;
-  }
-
   .example {
     background-color: #ffffff;
     padding-top: 45px;
     padding-bottom: 0;
     margin-bottom: 0;
+    border-top: 1px solid #e6e6e6;
   }
 
   .example__title {
@@ -99,7 +97,7 @@
   }
 
   .example__text {
-    margin-bottom: 50px;
+    margin: 0 30px 50px 0;
     font-size: 16px;
     line-height: 24px;
   }
@@ -158,9 +156,8 @@
 }
 
 @media (min-width: 1300px) {
-  .container {
-    width: 1220px;
-    padding: 0 40px;
+  .example {
+    border-top: none;
   }
 
   .example__wrapper-bg {
@@ -183,9 +180,8 @@
   }
 
   .example__text {
+    margin: 75px 0 70px 0;
     max-width: 435px;
-    margin-bottom: 70px;
-    margin-top: 75px;
   }
 
   .example__list {

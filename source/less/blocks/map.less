@@ -2,6 +2,10 @@
   background-color: #ffffff;
 }
 
+.map__inner--grey {
+  background-color: #f2f2f2;
+}
+
 .map__card {
   display: flex;
   justify-content: space-between;
@@ -27,10 +31,15 @@
 
 .map__block {
   position: relative;
-  background-image: url("bg-map-mobile@1x.png"), url("bg-map-mobile@2x.png");
+  background-image: url("bg-map-mobile@1x.png");
   background-repeat: no-repeat;
   background-position: 0 117px;
   height: 385px;
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url("../img/bg-map-mobile@2x.jpg");
+    background-size: 320px auto;
+  }
 }
 
 .map__google {
@@ -41,8 +50,8 @@
 }
 
 @media (min-width: 768px) {
-  .map__inner--grey {
-    background-color: #f2f2f2;
+  .map__inner {
+    padding: 60px 0;
   }
 
   .map__card {
@@ -51,12 +60,16 @@
   }
 
   .map__text {
+    margin: 0;
+    padding: 0;
     max-width: 160px;
     font-size: 20px;
     line-height: 25px;
   }
 
   .map__address {
+    margin: 0;
+    padding: 0;
     max-width: 170px;
     font-size: 16px;
   }
@@ -68,28 +81,26 @@
 
   .map__block {
     position: relative;
-    background-image: url("bg-map-tablet@1x.png"), url("bg-map-tablet@2x.png");
+    background-image: url("bg-map-tablet@1x.png");
     background-repeat: no-repeat;
     background-position: 0 50px;
     height: 390px;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/bg-map-tablet@2x.jpg");
+      background-size: 1534px auto;
+    }
   }
 }
 
 @media (min-width: 1300px) {
-  .container {
-    width: 1220px;
-    padding: 0 40px;
+  .map {
+    position: relative;
   }
 
-  .map__block {
-    background-image: url("bg-map-desktop@1x.png"), url("bg-map-desktop@2x.png");
-    background-position: 0 0;
-    height: 388px;
-  }
-
-  .map__card {
-    padding: 30px 60px;
+  .map__inner {
     margin: 0;
+    padding: 0;
     position: absolute;
     z-index: 2;
     background-color: #ffffff;
@@ -97,7 +108,19 @@
     left: 40px;
   }
 
-  .map {
-    position: relative;
+  .map__card {
+    margin: 35px 20px;
+    max-width: 380px;
+  }
+
+  .map__block {
+    background-image: url("bg-map-desktop@1x.png");
+    background-position: 0 0;
+    height: 388px;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/bg-map-desktop@2x.jpg");
+      background-size: 2880px auto;
+    }
   }
 }

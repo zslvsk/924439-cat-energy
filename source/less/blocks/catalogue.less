@@ -1,8 +1,6 @@
 .catalogue__title {
-  padding: 0;
-  margin: 0;
-  padding-top: 30px;
-  padding-bottom: 35px;
+  margin: 0 -20px;
+  padding: 30px 0 35px 20px;
   border-top: 1px solid #e6e6e6;
   border-bottom: 1px solid #e6e6e6;
   font-size: 36px;
@@ -11,7 +9,8 @@
 }
 
 .catalogue__item {
-  padding-top: 25px;
+  padding: 25px 20px 0 20px;
+  margin: 0 -20px;
   border-bottom: 1px solid #ededed;
   box-sizing: border-box;
 }
@@ -102,10 +101,12 @@
 
 @media (min-width: 768px) {
   .catalogue__title {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 155px;
     border: none;
     font-size: 60px;
     line-height: 60px;
-    margin-bottom: 155px;
   }
 
   .catalogue__list {
@@ -115,8 +116,9 @@
   }
 
   .catalogue__item {
-    padding: 0 35px 40px;
+    margin: 0;
     margin-bottom: 140px;
+    padding: 0 35px 40px;
     flex-basis: 45%;
     background-color: #f2f2f2;
     border-bottom: none;

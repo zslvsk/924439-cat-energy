@@ -26,15 +26,6 @@
   font-family: inherit;
 }
 
-.slider__button:hover,
-.slider__button:focus {
-  border-bottom: 1px solid #cdcdcd;
-}
-
-.slider__button--down {
-  border-bottom: none;
-}
-
 .slider__scale {
   position: relative;
   width: 83px;
@@ -57,7 +48,7 @@
 
 @media (min-width: 768px) {
   .slider__photos {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     display: flex;
     min-height: 535px;
   }
@@ -81,6 +72,15 @@
     font-size: 20px;
     padding-bottom: 7px;
     border-bottom: 1px dashed #cdcdcd;
+  }
+
+  .slider__button:hover,
+  .slider__button:focus {
+    border-bottom: 1px solid #cdcdcd;
+  }
+
+  .slider__button--down {
+    border-bottom: none;
   }
 
   .slider__controls {
@@ -111,6 +111,15 @@
     background: #ffffff;
     cursor: pointer;
     box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.15);
+  }
+
+  .slider__control:hover {
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.25);
+  }
+
+  .slider__control--down {
+    border: 1px solid #6fb843;
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.25);
   }
 
   .slider__control::before {

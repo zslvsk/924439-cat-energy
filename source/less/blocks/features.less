@@ -80,12 +80,16 @@
 }
 
 @media (min-width: 768px) {
+  .features {
+    margin-bottom: 100px;
+  }
+
   .features__list {
     margin-left: 0;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: space-between;
     flex-wrap: wrap;
-    max-width: 635px;
+    max-width: 605px;
     counter-reset: section;
   }
 
@@ -96,9 +100,8 @@
   }
 
   .features__item {
-    flex-basis: 35%;
+    flex-basis: 40.5%;
     margin-top: 170px;
-    margin-right: 95px;
     font-size: 16px;
     line-height: 24px;
   }
@@ -148,16 +151,14 @@
 
 @media (min-width: 1300px) {
   .features {
-    margin-bottom: 135px;
+    margin-bottom: 25px;
   }
 
   .features__list {
-    justify-content: space-between;
     max-width: 1220px;
   }
 
   .features__item {
     flex-basis: 20%;
-    margin-right: 0;
   }
 }
