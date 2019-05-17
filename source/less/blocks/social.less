@@ -17,19 +17,19 @@
   .link-style;
   color: #111111;
   font-size: 0;
+
+  &:hover .social__icon,
+  &:focus .social__icon {
+    fill: #68b738;
+  }
+
+  &:active .social__icon {
+    opacity: 0.3;
+  }
 }
 
 .social__icon {
   fill: #666666;
-
-  &:hover,
-  &:focus {
-    fill: #68b738;
-  }
-
-  &:active {
-    opacity: 0.3;
-  }
 }
 
 @media (min-width: 768px) {
