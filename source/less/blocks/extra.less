@@ -13,6 +13,7 @@
   position: relative;
   margin: 0;
   padding: 30px 0;
+  padding-bottom: 33px;
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
@@ -31,7 +32,7 @@
 
 .extra__item-title {
   margin: 0;
-  padding: 15px 0;
+  padding: 14px 0 11px;
   font-size: 16px;
   line-height: 16px;
   font-weight: 400;
@@ -55,6 +56,10 @@
   text-align: right;
 }
 
+.extra__button {
+  margin-bottom: 1px;
+}
+
 .extra__gift {
   background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-color: #68b738;
@@ -64,9 +69,9 @@
   flex-direction: column;
   text-align: center;
   align-items: center;
-  min-height: 190px;
-  padding: 65px 60px 40px;
-  margin: 40px 0;
+  min-height: 202px;
+  padding: 62px 60px 26px;
+  margin: 37px 0;
   justify-content: space-between;
 
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
@@ -80,44 +85,46 @@
   font-family: "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
-  max-width: 160px;
+  max-width: 174px;
+  margin-left: 11px;
 }
 
 @media (min-width: 768px) {
   .extra__title {
+    margin-left: 37px;
+    margin-bottom: 80px;
+    padding: 0;
     font-size: 36px;
     line-height: 36px;
-    margin-bottom: 75px;
-    padding: 0;
     border-bottom: none;
   }
 
   .extra__title::after {
-    left: 402px;
-    top: 50%;
-    width: 47.5%;
+    left: 56%;
+    top: 55%;
+    width: 48.5%;
   }
 
   .extra__title::before {
     position: absolute;
     content: "";
-    top: 50%;
-    left: -30px;
-    width: 2.6%;
+    top: 55%;
+    left: -10%;
+    width: 4.6%;
     height: 3px;
     background-color: #68b738;
   }
 
   .extra__item {
     border: 1px solid #cdcdcd;
-    padding: 30px 40px;
+    padding: 3px 38px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
   }
 
   .extra__item-title {
-    padding: 25px 0;
+    padding: 16px 0 13px;
     font-size: 20px;
     line-height: 20px;
     flex-basis: 50%;
@@ -125,7 +132,8 @@
 
   .extra__table {
     flex-basis: 50%;
-    margin-top: 20px;
+    width: 50%;
+    margin-top: 24px;
   }
 
   .extra__table-cell {
@@ -135,11 +143,20 @@
 
   .extra__table-cell:first-child {
     text-align: right;
-    width: 70%;
+    width: 71%;
+  }
+
+  .extra__columns {
+    margin-bottom: 74px;
   }
 
   .extra__column {
-    margin-bottom: 69px;
+    margin-bottom: 70px;
+  }
+
+  .extra__button {
+    margin-top: 6px;
+    margin-bottom: 24px;
   }
 
   .extra__gift {
@@ -149,14 +166,19 @@
     text-align: center;
     align-items: center;
     min-height: 77px;
-    padding: 60px 90px 60px 70px;
+    padding: 56px 110px 52px 87px;
     margin: 40px 0;
     justify-content: space-between;
 
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
       background-image: url("../img/gift-photo-tablet@2x.jpg");
-      background-size: 1416px auto;
+      background-size: cover;
     }
+  }
+
+  .extra__gift-icon {
+    margin-top: -15px;
+    margin-left: 2px;
   }
 
   .extra__gift-text {
@@ -165,18 +187,28 @@
 }
 
 @media (min-width: 1300px) {
+  .extra__title {
+    margin-left: 0;
+    margin-bottom: 82px;
+  }
+
   .extra__title::before {
-    left: -40px;
+    top: 67%;
+    left: -6%;
+    width: 2.6%;
+    height: 3px;
   }
 
   .extra__title::after {
-    width: 70.2%;
+    left: 31%;
+    top: 67%;
+    width: 74.2%;
   }
 
   .extra__columns {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 90px;
+    margin-bottom: 87px;
   }
 
   .extra__column {
@@ -184,15 +216,17 @@
   }
 
   .extra__column:first-child {
-    flex-basis: 65.2%;
+    flex-basis: 73.3%;
   }
 
   .extra__column:last-child {
-    flex-basis: 29%;
+    flex-basis: 20%;
   }
 
   .extra__item {
-    padding: 25px 0;
+    padding: 0 0;
+    margin-left: 2px;
+    margin-bottom: 1px;
     flex-wrap: nowrap;
     justify-content: space-between;
     border-right: none;
@@ -209,10 +243,14 @@
   }
 
   .extra__table {
+    margin-left: 123px;
     flex-basis: 32.5%;
+    width: 32.5%;
   }
 
   .extra__button {
+    margin-top: 15px;
+    margin-bottom: 15px;
     flex-basis: 27.4%;
   }
 
@@ -222,20 +260,20 @@
 
   .extra__gift {
     background-image: url("../img/gift-photo-desktop@1x.jpg");
-    padding: 40px 22px;
-    min-height: 400px;
+    padding: 24px 0;
     margin: 0;
     flex-direction: column;
     justify-content: center;
 
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
       background-image: url("../img/gift-photo-desktop@2x.jpg");
-      background-size: 490px auto;
+      background-size: cover;
     }
   }
 
   .extra__gift-icon {
-    margin-bottom: 60px;
+    margin-top: 40px;
+    margin-bottom: 45px;
   }
 
   .extra__gift-text {
