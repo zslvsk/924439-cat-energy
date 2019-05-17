@@ -1,5 +1,5 @@
 .features {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .features__title {
@@ -7,7 +7,7 @@
   padding: 0;
   font-size: 36px;
   line-height: 60px;
-  margin-bottom: 35px;
+  margin-bottom: 30px;
   font-weight: 400;
 }
 
@@ -19,7 +19,7 @@
 }
 
 .features__item {
-  margin-bottom: 30px;
+  margin-bottom: 26px;
   position: relative;
   font-family: "Arial", sans-serif;
   color: #444444;
@@ -30,7 +30,7 @@
 .features__item--healthy::after {
   position: absolute;
   content: "";
-  top: 0;
+  top: -2px;
   left: -80px;
   height: 60px;
   width: 60px;
@@ -43,7 +43,7 @@
 .features__item--convenient::after {
   position: absolute;
   content: "";
-  top: 0;
+  top: -2px;
   left: -80px;
   height: 60px;
   width: 60px;
@@ -56,7 +56,7 @@
 .features__item--supplement::after {
   position: absolute;
   content: "";
-  top: 0;
+  top: -2px;
   left: -80px;
   height: 60px;
   width: 60px;
@@ -69,7 +69,7 @@
 .features__item--quick::after {
   position: absolute;
   content: "";
-  top: 0;
+  top: -2px;
   left: -80px;
   height: 60px;
   width: 60px;
@@ -81,7 +81,7 @@
 
 @media (min-width: 768px) {
   .features {
-    margin-bottom: 100px;
+    margin-bottom: 13px;
   }
 
   .features__list {
@@ -89,7 +89,7 @@
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
-    max-width: 605px;
+    max-width: 645px;
     counter-reset: section;
   }
 
@@ -101,7 +101,8 @@
 
   .features__item {
     flex-basis: 40.5%;
-    margin-top: 170px;
+    margin-top: 157px;
+    margin-bottom: 88px;
     font-size: 16px;
     line-height: 24px;
   }
@@ -121,28 +122,28 @@
   }
 
   .features__item--healthy::after {
-    top: -120px;
+    top: -111px;
     left: 0;
     width: 80px;
     height: 80px;
   }
 
   .features__item--convenient::after {
-    top: -120px;
+    top: -111px;
     left: 0;
     width: 80px;
     height: 80px;
   }
 
   .features__item--supplement::after {
-    top: -120px;
+    top: -111px;
     left: 0;
     width: 80px;
     height: 80px;
   }
 
   .features__item--quick::after {
-    top: -120px;
+    top: -111px;
     left: 0;
     width: 80px;
     height: 80px;
@@ -151,7 +152,7 @@
 
 @media (min-width: 1300px) {
   .features {
-    margin-bottom: 25px;
+    margin-bottom: 53px;
   }
 
   .features__list {
@@ -159,6 +160,8 @@
   }
 
   .features__item {
-    flex-basis: 20%;
+    margin-right: -11px;
+    margin-bottom: 27px;
+    flex-basis: 21%;
   }
 }

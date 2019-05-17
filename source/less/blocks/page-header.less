@@ -13,20 +13,12 @@
   width: 190px;
 
   &:hover,
-  &:focus,
-  &:active {
+  &:focus {
     opacity: 0.8;
   }
 
-  &--down {
+  &:active {
     opacity: 0.6;
-
-    &:hover,
-    &:focus,
-    &:active {
-      opacity: 0.6;
-      cursor: auto;
-    }
   }
 }
 
@@ -36,14 +28,14 @@
 
 @media (min-width: 768px) {
   .page-header {
-    margin-bottom: 60px;
+    margin-bottom: 30px;
     margin-top: 0;
     flex-direction: row;
     justify-content: space-between;
   }
 
   .page-header__logo {
-    width: 190px;
+    width: 229px;
     height: auto;
   }
 
@@ -66,7 +58,8 @@
 
   .page-header__logo {
     height: auto;
-    max-width: 245px;
+    width: 202px;
+    flex-shrink: 0;
   }
 
   .page-header__logo-image {

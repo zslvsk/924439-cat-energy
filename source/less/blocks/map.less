@@ -7,10 +7,9 @@
 }
 
 .map__card {
+  padding: 13px 0 10px;
   display: flex;
   justify-content: space-between;
-  padding: 30px 0;
-  padding-bottom: 25px;
 }
 
 .map__text {
@@ -31,19 +30,20 @@
 
 .map__block {
   position: relative;
-  background-image: url("bg-map-mobile@1x.png");
+  background-image: url("../../img/bg-map-mobile@1x.png");
   background-repeat: no-repeat;
-  background-position: 0 117px;
-  height: 385px;
+  background-position: 0 0;
+  height: 365px;
 
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-    background-image: url("../img/bg-map-mobile@2x.jpg");
+    background-image: url("../../img/bg-map-mobile@2x.png");
     background-size: 320px auto;
   }
 }
 
 .map__google {
   width: 100%;
+  height: 100%;
   position: absolute;
   top: 0;
   left: 0;
@@ -51,12 +51,13 @@
 
 @media (min-width: 768px) {
   .map__inner {
-    padding: 60px 0;
+    padding: 48px 0;
   }
 
   .map__card {
     max-width: 630px;
     margin: 0 auto;
+    margin-top: 5px;
   }
 
   .map__text {
@@ -69,25 +70,27 @@
 
   .map__address {
     margin: 0;
+    margin-right: 3px;
     padding: 0;
     max-width: 170px;
     font-size: 16px;
+    text-align: right;
   }
 
   .map__city {
     display: block;
-    margin-top: 25px;
+    margin-top: 20px;
   }
 
   .map__block {
     position: relative;
-    background-image: url("bg-map-tablet@1x.png");
+    background-image: url("../../img/bg-map-tablet@1x.png");
     background-repeat: no-repeat;
     background-position: 0 50px;
-    height: 390px;
+    height: 396px;
 
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-      background-image: url("../img/bg-map-tablet@2x.jpg");
+      background-image: url("../../img/bg-map-tablet@2x.jpg");
       background-size: 1534px auto;
     }
   }
@@ -104,22 +107,30 @@
     position: absolute;
     z-index: 2;
     background-color: #ffffff;
-    top: 108px;
-    left: 40px;
+    top: 93px;
+    left: 62px;
   }
 
   .map__card {
-    margin: 35px 20px;
-    max-width: 380px;
+    margin: 50px 77px 45px;
+    max-width: 417px;
+    box-sizing: border-box;
+    align-items: center;
+  }
+
+  .map__address {
+    margin: 0;
+    text-align: left;
+    max-width: 168px;
   }
 
   .map__block {
-    background-image: url("bg-map-desktop@1x.png");
+    background-image: url("../../img/bg-map-desktop@1x.png");
     background-position: 0 0;
-    height: 388px;
+    height: 398px;
 
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-      background-image: url("../img/bg-map-desktop@2x.jpg");
+      background-image: url("../../img/bg-map-desktop@2x.jpg");
       background-size: 2880px auto;
     }
   }
