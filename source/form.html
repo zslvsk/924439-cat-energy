@@ -5,6 +5,8 @@
     <title>HTML Academy: Кэт энерджи</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="format-detection" content="telephone=no">
+    <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
+    <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
     <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body>
@@ -68,7 +70,7 @@
           </div>
         </div>
         <fieldset class="form__item form__item--contacts">
-          <legend class="form__title form__title--long">Контактные данные (владельца кота)</legend>
+          <legend class="form__title form__title--contacts">Контактные данные (владельца кота)</legend>
             <div class="form__section">
               <div class="form__section-column">
                 <p class="form__field form__field--wrapper">
@@ -87,14 +89,14 @@
           </div>
         </fieldset>
         <div class="form__item form__item--comments">
-          <h2 class="form__title">Комментарий</h2>
+          <h2 class="form__title form__title--comment">Комментарий</h2>
           <p class="form__textarea">
             <label for="cat-story" class="visually-hidden">Расскажите обо всех повадках кота</label>
             <textarea name="cat-story" id="cat-story" placeholder="Расскажите обо всех повадках кота" rows="7" cols="34" class="form__input form__input--textarea"></textarea>
           </p>
         </div>
         <fieldset class="form__item form__item--add">
-          <legend class="form__title">Дополнительно</legend>
+          <legend class="form__title form__title--add">Дополнительно</legend>
           <ul class="form__list form__list--checkbox">
             <li class="form__list-item form__list-item--checkbox" tabindex="0">
               <input type="checkbox" name="add" value="sweetener" id="sweetener-field" class="form__input form__input--checkbox" checked>

@@ -106,7 +106,7 @@
   background: #ffffff;
 }
 
-.form__title--long {
+.form__title--contacts {
   padding-top: 28px;
   padding-bottom: 34px;
   min-width: 221px;
@@ -115,16 +115,25 @@
 .form__title::after {
   position: absolute;
   content: "";
-  left: 0;
-  top: 53%;
-  width: 100vw;
+  left: 101%;
+  top: 59%;
   height: 3px;
+  width: 100%;
   background-color: #68b738;
-  z-index: -1;
 }
 
-.form__title--long::after {
+.form__title--contacts::after {
   top: 38%;
+  width: 45%;
+  left: 100%;
+}
+
+.form__title--comment::after {
+  width: 98%;
+}
+
+.form__title--add::after {
+  width: 76%;
 }
 
 .form__textarea {
@@ -281,7 +290,6 @@
   }
 
   .form__title {
-    position: relative;
     margin: 0 -30px;
     padding: 0 30px;
     max-width: none;
@@ -290,13 +298,32 @@
     line-height: 36px;
   }
 
-  .form__title::after {
+  .form__title::before {
+    position: absolute;
+    content: "";
+    top: 58%;
     left: -38px;
-    width: 99.5vw;
+    height: 3px;
+    width: 28px;
+    background-color: #68b738;
   }
 
-  .form__title--long::after {
-    top: 50%;
+  .form__title::after {
+    left: 104%;
+  }
+
+  .form__title--contacts::after {
+    top: 57%;
+    width: 25%;
+    left: 102%;
+  }
+
+  .form__title--comment::after {
+    width: 199%;
+  }
+
+  .form__title--add::after {
+    width: 165%;
   }
 
   .form__field {
@@ -357,7 +384,7 @@
     padding-bottom: 50px;
   }
 
-  .form__title--long {
+  .form__title--contacts {
     margin-bottom: 73px;
   }
 
@@ -438,10 +465,6 @@
     margin: 0 -40px;
   }
 
-  .form__title::after {
-    width: 99.5vw;
-  }
-
   .form__input {
     padding: 6px 18px;
     height: 40px;
@@ -506,8 +529,25 @@
     padding-bottom: 45px;
   }
 
-  .form__title--long {
+  .form__title--contacts {
     margin-bottom: 75px;
+  }
+
+  .form__title::before {
+     width: 24px;
+     left: -5px;
+  }
+
+  .form__title--contacts::after {
+    width: 118%;
+  }
+
+  .form__title--comment::after {
+    width: 397%;
+  }
+
+  .form__title--add::after {
+    width: 344%;
   }
 
   .form__input--icon {

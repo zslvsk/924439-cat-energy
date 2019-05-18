@@ -5,6 +5,8 @@
     <title>HTML Academy: Кэт энерджи</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="format-detection" content="telephone=no">
+    <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
+    <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
     <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body>
@@ -31,8 +33,8 @@
       <section class="catalogue">
         <div class="catalogue__wrapper">
           <h1 class="catalogue__title">Каталог продукции</h1>
-          <ul class="catalogue__list">
-            <li class="catalogue__item">
+          <section class="catalogue__list">
+            <div class="catalogue__item">
               <div class="catalogue__card">
                 <a href="#" class="catalogue__pic-link catalogue__pic-small">
                   <picture>
@@ -63,8 +65,8 @@
                 </div>
               </div>
               <a href="#" class="button catalogue__button">Заказать</a>
-            </li>
-            <li class="catalogue__item">
+            </div>
+            <div class="catalogue__item">
               <div class="catalogue__card">
                 <a href="#" class="catalogue__pic-link catalogue__pic-big">
                   <picture>
@@ -95,8 +97,8 @@
                   </div>
                 </div>
                 <a href="#" class="button catalogue__button">Заказать</a>
-            </li>
-            <li class="catalogue__item">
+            </div>
+            <div class="catalogue__item">
               <div class="catalogue__card">
                 <a href="#" class="catalogue__pic-link catalogue__pic-small">
                   <picture>
@@ -127,8 +129,8 @@
                 </div>
               </div>
               <a href="#" class="button catalogue__button">Заказать</a>
-            </li>
-            <li class="catalogue__item">
+            </div>
+            <div class="catalogue__item">
               <div class="catalogue__card">
                 <a href="#" class="catalogue__pic-link catalogue__pic-big">
                   <picture>
@@ -159,8 +161,8 @@
                 </div>
               </div>
               <a href="#" class="button catalogue__button">Заказать</a>
-            </li>
-            <li class="catalogue__item">
+            </div>
+            <div class="catalogue__item">
               <div class="catalogue__card">
                 <a href="#" class="catalogue__pic-link catalogue__pic-small">
                   <picture>
@@ -191,8 +193,8 @@
                 </div>
               </div>
               <a href="#" class="button catalogue__button">Заказать</a>
-            </li>
-            <li class="catalogue__item">
+            </div>
+            <div class="catalogue__item">
               <div class="catalogue__card">
                 <a href="#" class="catalogue__pic-link catalogue__pic-big">
                   <picture>
@@ -223,8 +225,8 @@
                 </div>
               </div>
               <a href="#" class="button catalogue__button">Заказать</a>
-            </li>
-            <li class="catalogue__item">
+            </div>
+            <div class="catalogue__item">
               <div class="catalogue__card">
                 <a href="#" class="catalogue__pic-link catalogue__pic-small">
                   <picture>
@@ -255,17 +257,18 @@
                 </div>
               </div>
               <a href="#" class="button catalogue__button">Заказать</a>
-            </li>
-            <li class="catalogue__item">
-              <div class="catalogue__item-wrapper">
-                <p class="catalogue__item-more">Показать еще 100500 товаров</p>
-                <p class="catalogue__item-text">На самом деле вкусов гораздо больше!</p>
+            </div>
+            <div class="catalogue__item catalogue__show">
+              <div class="catalogue__show-wrapper">
+                <p class="catalogue__show-more">Показать еще 100500 товаров</p>
+                <p class="catalogue__show-text">На самом деле вкусов гораздо больше!</p>
               </div>
               <a href="#" class="button button--grey catalogue__button">Показать все</a>
-            </li>
-          </ul>
+            </div>
+          </section>
         </div>
-        <section class="extra">
+      </section>
+      <section class="extra">
           <h2 class="extra__title">Дополнительные товары</h2>
           <div class="extra__columns">
             <div class="extra__column">
@@ -330,7 +333,6 @@
               </div>
             </div>
           </div>
-        </section>
       </section>
     </main>
     <footer class="page-footer">

@@ -26,18 +26,9 @@
 }
 
 .site-list__link[href] {
-  &:hover {
-    opacity: 0.6;
-  }
-}
-
-.site-list__link--down[href] {
-  opacity: 0.3;
-  cursor: auto;
-
   &:hover,
-  &:active {
-    opacity: 0.3;
+  &:focus {
+    opacity: 0.6;
   }
 }
 
@@ -72,9 +63,9 @@
     padding-bottom: 7px;
   }
 
-  .site-list__link:active {
+  .site-list__link[href]:active {
     color: #111111;
-    border-bottom: 2px solid #68b738;
+    border-bottom: transparent;
   }
 
   .site-list__link--current {
@@ -109,13 +100,15 @@
     color: #111111;
   }
 
-  .site-list__link:active {
+  .site-list__link[href]:active {
     color: #ffffff;
-    border-bottom: 2px solid #ffffff;
+    opacity: 0.3;
+    border-bottom: transparent;
   }
 
-  .site-list__link--inner:active {
+  .site-list__link--inner[href]:active {
     color: #111111;
-    border-bottom: 2px solid #68b738;
+    opacity: 0.3;
+    border-bottom: transparent;
   }
 }
