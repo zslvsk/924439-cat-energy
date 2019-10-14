@@ -17,6 +17,9 @@ var uglify = require("gulp-uglify");
 var pipeline = require("readable-stream").pipeline;
 var webp = require("gulp-webp");
 
+var ghPages = require('gh-pages');
+var path = require('path');
+
 
 gulp.task("css", function () {
   return gulp.src("source/less/style.less")
@@ -104,6 +107,11 @@ gulp.task("clean", function () {
   return del("build");
 })
 
+function deploy(cb) {
+  ghPages.publish(path.join(process.cwd(), './build'), cb);
+}
+
 
 gulp.task("build", gulp.series("clean", "copy", "css", "minify", "compress", "images", "webp", "sprite"));
 gulp.task("start", gulp.series("build", "server"));
+exports.deploy = deploy;
